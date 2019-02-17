@@ -23,17 +23,18 @@ document.addEventListener('DOMContentLoaded',function(){
         let attack = moves[0];
         chuck.classList.add(attack);
         quote.classList.add('shake');
-        req=new XMLHttpRequest();
-        req.open("GET",'http://api.icndb.com/jokes/random',true);
+        req = new XMLHttpRequest();
+        req.open("GET",'https://api.chucknorris.io/jokes/random',true);
         req.send();
-        req.onload=setTimeout(function(){
+        req.onload=function(){
             json=JSON.parse(req.responseText);
-            document.getElementById('quote').innerHTML=JSON.stringify(json.value["joke"])}, 350);
-        
+            console.log(json);
+            document.getElementById('quote').innerHTML=JSON.stringify(json["value"])} ;
         setTimeout(function(){
             chuck.classList.remove(attack);
             quote.classList.remove('shake');
         }, 1500);
     };
 });
+
 
