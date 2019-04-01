@@ -2,7 +2,7 @@
 
 If you think you know about Chuck Norris, think again.
 
-This web application utilizes the [Chuck Norris Jokes API](https://api.chucknorris.io/) to provide users with fun random "facts" about the man, the myth, the beard...Chuch Norris.
+This web application utilizes the [Chuck Norris Jokes API](https://api.chucknorris.io/) to provide users with fun random "facts" about the man, the myth, the beard...Chuck Norris.
 
 The app features a Chuck Norris cartoon character that will randomly perform one of three animations when clicked on to either chop, slap, or flying back-flip kick the text box to call for a new random Chuck Norris fact.
 
