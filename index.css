@@ -10,20 +10,18 @@ body {
   font-family: "Yeon Sung", cursive;
 }
 
-h1 {
-  font-size: 3em;
-}
-
-#container {
+#container,
+#quote-box,
+#instructions,
+#quote,
+#chuck-norris {
   margin: auto;
 }
 
 #quote-box {
   display: flex;
   justify-content: center;
-  margin: auto;
   padding: 10px;
-  width: 600px;
   background: rgb(140, 80, 41);
   color: white;
   border: 1px solid black;
@@ -32,24 +30,16 @@ h1 {
 }
 
 #quote {
-  width: 300px;
-  margin: auto;
   margin-left: 5px;
-  font-size: 1.2em;
 }
 
 #chuck-norris {
-  margin: auto;
   margin-right: 0;
 }
 
 #chuck-norris:hover {
   transform: scale(1.05);
   cursor: pointer;
-}
-
-img {
-  width: 200px;
 }
 
 @keyframes backflip {
@@ -212,4 +202,67 @@ img {
 
 .slap {
   animation: slap 0.5s ease-in;
+}
+
+/* Extra small devices (phones, 599px and down) */
+@media only screen and (max-width: 599px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+  #quote-box,
+  #instructions {
+    width: 280px;
+  }
+  img {
+    width: 75px;
+  }
+  p {
+    font-size: 0.85rem;
+  }
+  #quote {
+    width: 150px;
+    font-size: 1rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 2.75rem;
+  }
+  #quote-box,
+  #instructions {
+    width: 500px;
+  }
+  img {
+    width: 100px;
+  }
+  p {
+    font-size: 1rem;
+  }
+  #quote {
+    width: 300px;
+    font-size: 1.2rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+  #quote-box,
+  #instructions {
+    width: 600px;
+  }
+  img {
+    width: 200px;
+  }
+  p {
+    font-size: 1rem;
+  }
+  #quote {
+    width: 300px;
+    font-size: 1.2rem;
+  }
 }
